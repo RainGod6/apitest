@@ -1,0 +1,65 @@
+{
+  "uid" : "6a17320d439e9f50",
+  "name" : "test_subtraction[10.9-9.1-1.8]",
+  "fullName" : "testcase.test_number.TestNumber#test_subtraction",
+  "historyId" : "3b15cd0d9e9083a44751154593eb630b",
+  "time" : {
+    "start" : 1611211842677,
+    "stop" : 1611211842677,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 1.8000000000000007 == 1.8",
+  "statusTrace" : "self = <testcase.test_number.TestNumber object at 0x1055acfd0>, a = 10.9, b = 9.1, res = 1.8\n\n    @pytest.mark.parametrize(\"a,b,res\",{\n        (10,0,10),\n        (100,99,1),\n        (0,0,0),\n        (10.9,9.1,1.8)\n    })\n    def test_subtraction(self, a, b,res):\n        result = Number().subtraction(a,b)\n>       assert result == res\nE       assert 1.8000000000000007 == 1.8\n\ntestcase/test_number.py:24: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_number"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestNumber"
+  }, {
+    "name" : "host",
+    "value" : "HCBdeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "59165-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_number"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "10.9"
+  }, {
+    "name" : "b",
+    "value" : "9.1"
+  }, {
+    "name" : "res",
+    "value" : "1.8"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6a17320d439e9f50.json",
+  "parameterValues" : [ "10.9", "9.1", "1.8" ]
+}
