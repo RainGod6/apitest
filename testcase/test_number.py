@@ -13,30 +13,30 @@ class TestNumber:
         result = Number().add(a, b)
         assert result == res
 
-    @pytest.mark.parametrize("a,b,res",{
-        (10,0,10),
-        (100,99,1),
-        (0,0,0),
-        (10.9,9.1,1.8)
+    @pytest.mark.parametrize("a,b,res", {
+        (10, 0, 10),
+        (100, 99, 1),
+        (0, 0, 0),
+        (10.0, 9.0, 1.0)
     })
-    def test_subtraction(self, a, b,res):
-        result = Number().subtraction(a,b)
+    def test_subtraction(self, a, b, res):
+        result = Number().subtraction(a, b)
         assert result == res
 
-    @pytest.mark.parametrize("a,b,res",{
-        (1,3,3),
-        (5,50,250),
-        (0,3,0)
+    @pytest.mark.parametrize("a,b,res", {
+        (1, 3, 3),
+        (5, 50, 250),
+        (0, 3, 0)
     })
-    def test_multiplication(self, a, b,res):
-        result = Number().multiplication(a,b)
+    def test_multiplication(self, a, b, res):
+        result = Number().multiplication(a, b)
         assert result == res
 
-    @pytest.mark.parametrize("a,b,res",{
-        (4,2,2),
-        (8,4.0,2),
-        (1000,100,10)
+    @pytest.mark.parametrize("a,b,res", {
+        (4, 2, 2),
+        (8, 4.0, 2),
+        (1000, 100, 10)
     })
-    def test_division(self, a, b,res):
-        result = Number().division(a,b)
+    def test_division(self, a, b, res):
+        result = Number().division(a, b)
         assert result == res
